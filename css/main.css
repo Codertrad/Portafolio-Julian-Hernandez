@@ -1,2 +1,120 @@
-body {
-  background-color: aqua; }
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;600;800&family=Syne+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.navBar__bg-black {
+  background-color: #000306; }
+  .navBar__bg-black .navBar__menu-ul {
+    font-size: 1.2rem;
+    font-family: "Inconsolata", monospace; }
+    .navBar__bg-black .navBar__menu-ul .navBar__link-blue {
+      color: #62BECB; }
+      .navBar__bg-black .navBar__menu-ul .navBar__link-blue:hover {
+        color: #0E4E5A; }
+
+.navBar__bg-blue {
+  background-color: #62BECB; }
+  .navBar__bg-blue .navBar__menu-ul {
+    font-size: 1.2rem;
+    font-family: "Inconsolata", monospace; }
+    .navBar__bg-blue .navBar__menu-ul .navBar__link-blue {
+      color: #000306; }
+      .navBar__bg-blue .navBar__menu-ul .navBar__link-blue:hover {
+        color: #0E4E5A; }
+
+.footer__black {
+  background-color: #000306;
+  color: #62BECB; }
+
+.footer__blue {
+  background-color: #62BECB;
+  color: #000306; }
+
+.footer__wrapper {
+  height: 3rem;
+  line-height: 3rem; }
+
+.main__principal {
+  background-color: #62BECB;
+  padding: .7rem 0; }
+  .main__principal #title__h2-animate {
+    font-size: 6rem;
+    font-family: "Syne Mono", monospace; }
+  .main__principal #title__h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: "Inconsolata", monospace; }
+  .main__principal .animate__1 {
+    display: block;
+    white-space: nowrap;
+    width: 6ch;
+    animation: typing 2s steps(6), blink 0.5s infinite step-end alternate;
+    overflow: hidden;
+    position: relative;
+    left: 3.2rem; }
+  .main__principal .animate__2 {
+    display: block;
+    white-space: nowrap;
+    width: 5ch;
+    animation: typing 2s steps(5), blink 0.5s infinite step-end alternate;
+    overflow: hidden;
+    position: relative;
+    left: 4.3rem; }
+
+@keyframes typing {
+  from {
+    width: 0; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }
+
+/* creacion y estructura de la seccion main PAGINA DE HABILIDADES */
+.main__habilidades {
+  background-color: #000306; }
+  .main__habilidades .titulo__skills {
+    font-family: "Syne Mono", monospace;
+    color: #62BECB; }
+  .main__habilidades .img__skills {
+    width: 14rem;
+    background-color: #0E4E5A;
+    border-radius: .5rem; }
+  .main__habilidades .img__skills:hover {
+    width: 15rem;
+    background-color: #62BECB;
+    border-radius: .5rem;
+    transform: scale(16rem) all ease;
+    position: absolute; }
+
+/* Estructuracion de la pagina de proyectos */
+.main__proyectos {
+  background-color: #62BECB;
+  height: 84.9vh; }
+  .main__proyectos .titulo__proyects {
+    font-family: "Syne Mono", monospace;
+    color: #000306; }
+  .main__proyectos .img__proyects {
+    width: 18rem; }
+  @media screen and (max-width: 768px) {
+    .main__proyectos .contenedor__proyectos {
+      height: max-content; } }
+
+/* seccion sobre mi */
+.main__about {
+  background-color: #000306; }
+  .main__about .titulo__skills {
+    font-family: "Syne Mono", monospace;
+    color: #62BECB; }
+  .main__about .img__about {
+    width: 30rem; }
+  .main__about .parrafo__about {
+    color: #0E4E5A;
+    text-align: justify; }
+
+.main__form {
+  background-color: #62BECB; }
+  .main__form .titulo__proyects {
+    font-family: "Syne Mono", monospace;
+    color: #000306; }

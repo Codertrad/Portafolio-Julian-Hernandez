@@ -1,3 +1,140 @@
-body{
-   background-color: aqua;
+@import "_reset";
+@import "_fonts";
+@import "_commons";
+@import "_navBar";
+@import "_footer";
+
+
+// Estilo y diseño PAGINA DE INICIO seccion Main
+
+
+.main__principal{
+   background-color: $blue;
+   padding: .7rem 0;
+
+   #title__h2-animate{
+      font-size: 6rem;
+      font-family: $secundaria;
+   }
+
+   #title__h3{
+      font-size: 2rem;
+      font-weight: 300;
+      font-family: $principal;
+   }
+
+   .animate__1{
+      display: block;
+      white-space: nowrap;
+      width: 6ch;
+      animation: typing 2s steps(6), blink .5s infinite step-end alternate ;
+      overflow: hidden;
+      position: relative;
+      left: 3.2rem;
+   }
+   
+   .animate__2{
+      display: block;
+      white-space: nowrap;
+      width: 5ch;
+      animation: typing 2s steps(5), blink .5s infinite step-end alternate ;
+      overflow: hidden;
+      position: relative;
+      left: 4.3rem;
+   }
+
+   @keyframes typing{
+      from { width: 0 }
+   }
+   
+   @keyframes blink{
+      50% { border-color: transparent ;}
+   }
+
 }
+
+
+
+/* creacion y estructura de la seccion main PAGINA DE HABILIDADES */
+
+
+.main__habilidades{
+   background-color: $black;
+
+   .titulo__skills{
+      font-family: $secundaria;
+      color: $blue;
+   }
+
+   .img__skills{
+      width: 14rem;
+      background-color:$darkBlue;
+      border-radius: .5rem;
+   }
+
+   .img__skills:hover{
+      width: 15rem;
+      background-color:$blue;
+      border-radius: .5rem;
+      transform: scale(16rem) all ease;
+      position:absolute;
+   }
+}
+
+
+/* Estructuracion de la pagina de proyectos */
+
+.main__proyectos{
+   background-color: $blue;
+   height: 84.9vh;
+
+   .titulo__proyects{
+      font-family: $secundaria;
+      color: $black;
+   }
+
+   .img__proyects{
+      width: 18rem;
+   }
+
+   @media screen and (max-width:768px) {
+      .contenedor__proyectos{
+         height: max-content;
+      }
+   }
+}
+
+
+/* seccion sobre mi */
+
+.main__about{
+   background-color: $black;
+
+   .titulo__skills{
+      font-family: $secundaria;
+      color: $blue;
+   }
+
+   .img__about{
+      width: 30rem;
+   }
+   
+   .parrafo__about{
+      color: $darkBlue;
+      text-align: justify;
+   }
+}
+
+//Form
+
+.main__form{
+   background-color: $blue;
+
+   .titulo__proyects{
+      font-family: $secundaria;
+      color: $black;
+   }
+   
+}
+
+

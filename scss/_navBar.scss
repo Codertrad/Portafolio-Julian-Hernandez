@@ -1,0 +1,40 @@
+// MENU DE NAVEGACION NEGRO
+
+.navBar__bg-black{
+   background-color: $black;
+
+   .navBar__menu-ul{
+      font-size: 1.2rem;
+      font-family: $principal;
+
+      .navBar__link-blue{
+         color: $blue;
+
+         &:hover{
+            color: $darkBlue;
+         }
+
+      }
+   }
+   
+}
+
+// MENU DE NAVEGACION AZUL
+
+.navBar__bg-blue{
+   background-color: $blue;
+
+   .navBar__menu-ul{
+      font-size: 1.2rem;
+      font-family: $principal;
+
+      .navBar__link-blue{
+         color: $black;
+
+         &:hover{
+            color: $darkBlue;
+         }
+      }
+   }
+
+}
