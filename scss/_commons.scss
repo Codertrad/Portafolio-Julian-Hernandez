@@ -2,10 +2,37 @@
 
 //colores generales
 
+//ME GUTAN MAS LAS VARIABLES JAJAJ
 
 $blue : #62BECB;
 $darkBlue : #0E4E5A;
-
-
 $black: #000306;
 $darkBlack: #000000;
+
+//map
+
+$paleta:(
+
+   'blue' : #62BECB,
+   'darkBlue' : #0E4E5A,
+   'black' : #000306,
+   'darkBlack': #000000,);
+
+//extend
+
+.img__skills{
+   width: 14rem;
+   background-color:$darkBlue;
+   border-radius: .5rem;
+}
+
+.img__proyects{
+   @extend .img__skills;
+}
+
+//mixin
+
+@mixin titulo($font-family, $color) {
+   font-family: $font-family;
+   color: $color;
+}

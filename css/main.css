@@ -4,6 +4,11 @@
   padding: 0;
   box-sizing: border-box; }
 
+.img__skills, .img__proyects {
+  width: 14rem;
+  background-color: #0E4E5A;
+  border-radius: .5rem; }
+
 .navBar__bg-black {
   background-color: #000306; }
   .navBar__bg-black .navBar__menu-ul {
@@ -77,11 +82,7 @@
   .main__habilidades .titulo__skills {
     font-family: "Syne Mono", monospace;
     color: #62BECB; }
-  .main__habilidades .img__skills {
-    width: 14rem;
-    background-color: #0E4E5A;
-    border-radius: .5rem; }
-  .main__habilidades .img__skills:hover {
+  .main__habilidades .img__skills:hover, .main__habilidades .img__proyects:hover {
     width: 15rem;
     background-color: #62BECB;
     border-radius: .5rem;
@@ -95,11 +96,13 @@
   .main__proyectos .titulo__proyects {
     font-family: "Syne Mono", monospace;
     color: #000306; }
-  .main__proyectos .img__proyects {
-    width: 18rem; }
-  @media screen and (max-width: 768px) {
-    .main__proyectos .contenedor__proyectos {
-      height: max-content; } }
+
+@media screen and (max-width: 768px) {
+  .main__proyectos {
+    height: max-content; }
+    .main__proyectos .img__proyects {
+      margin: 1rem 0;
+      width: 20rem; } }
 
 /* seccion sobre mi */
 .main__about {

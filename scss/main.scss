@@ -9,7 +9,7 @@
 
 
 .main__principal{
-   background-color: $blue;
+   background-color:map-get($map: $paleta, $key: 'blue' );
    padding: .7rem 0;
 
    #title__h2-animate{
@@ -59,17 +59,11 @@
 
 
 .main__habilidades{
-   background-color: $black;
+   background-color: map-get($map: $paleta, $key: 'black');
 
    .titulo__skills{
       font-family: $secundaria;
       color: $blue;
-   }
-
-   .img__skills{
-      width: 14rem;
-      background-color:$darkBlue;
-      border-radius: .5rem;
    }
 
    .img__skills:hover{
@@ -85,21 +79,21 @@
 /* Estructuracion de la pagina de proyectos */
 
 .main__proyectos{
-   background-color: $blue;
+   background-color:map-get($map: $paleta, $key: 'blue' );
    height: 84.9vh;
 
    .titulo__proyects{
-      font-family: $secundaria;
-      color: $black;
+      @include titulo ($secundaria, $black);
    }
+}
 
-   .img__proyects{
-      width: 18rem;
-   }
+@media screen and (max-width:768px) {
+   .main__proyectos{
+      height: max-content;
 
-   @media screen and (max-width:768px) {
-      .contenedor__proyectos{
-         height: max-content;
+      .img__proyects{
+       margin: 1rem 0;
+       width: 20rem;
       }
    }
 }
@@ -108,11 +102,10 @@
 /* seccion sobre mi */
 
 .main__about{
-   background-color: $black;
+   background-color:map-get($map: $paleta, $key: 'black');
 
    .titulo__skills{
-      font-family: $secundaria;
-      color: $blue;
+      @include titulo ($secundaria, $blue);
    }
 
    .img__about{
@@ -128,11 +121,10 @@
 //Form
 
 .main__form{
-   background-color: $blue;
+   background-color: map-get($map: $paleta, $key: 'blue' );
 
    .titulo__proyects{
-      font-family: $secundaria;
-      color: $black;
+      @include titulo ($secundaria, $black)
    }
    
 }
