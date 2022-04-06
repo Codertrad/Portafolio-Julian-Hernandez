@@ -1,0 +1,3 @@
+1- cambie el logo por uno mas optimizado
+2- agregue un meta description
+3- agregue un meta keywords
