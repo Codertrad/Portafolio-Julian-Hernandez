@@ -9,6 +9,10 @@
   background-color: #0E4E5A;
   border-radius: .5rem; }
 
+.logo__menu {
+  margin-left: 3rem;
+  width: 60px; }
+
 .navBar__bg-black {
   background-color: #000306; }
   .navBar__bg-black .navBar__menu-ul {
@@ -112,6 +116,21 @@
     color: #62BECB; }
   .main__about .img__about {
     width: 30rem; }
+    @media screen and (max-width: 1024px) {
+      .main__about .img__about {
+        width: 25rem; } }
+    @media screen and (max-width: 768px) {
+      .main__about .img__about {
+        width: 30rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center; } }
+    @media screen and (max-width: 425px) {
+      .main__about .img__about {
+        width: 15rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center; } }
   .main__about .parrafo__about {
     color: #0E4E5A;
     text-align: justify; }
